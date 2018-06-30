@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<title>选择题</title>
+  	<link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+	<script src="js/jquery.js"></script>
+	<style>
+			li{
+				height: 30px;
+				width: 200px;
+				line-height: 30px;
+				text-align: center;
+				color: #fff;
+				background-color: green;
+				margin: 5px;
+			}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<hr/>
+		<strong>1.Don't you remember me？</strong>
+		<ul class="list">
+			<li>A.Yes,I don't</li>
+			<li>B.No,I don't</li>
+			<li class="aaa">C.Yes,I do</li>
+			<li>D.No I not</li>
+		</ul>
+	 	<hr/>
+	 	<strong>2.I'm surprlsed ____ this city is a dull place to live in.</strong>
+		<ul class="list">
+			<li class="aaa">A.that you should think</li>
+			<li>B.by what you are thinking</li>
+			<li>C.that you would think</li>
+			<li>D.whith what you were thinking</li>
+		</ul>
+		<hr/>
+	</div>
+		<script>
+  			$('.list').find('li').on('click',function(){
+  				if(this.className=='aaa'){
+  					alert('恭喜你答对了')
+  				}else{
+  		 			alert('对不起，您答错了')
+  		 		}
+  			})
+		</script>
+</body>
+</html>
